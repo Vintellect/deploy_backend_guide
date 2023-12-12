@@ -5,10 +5,13 @@ This guide serves as a central resource for setting up and managing the backend 
 
 ## Link to specific guide :
 
-[Cloud Spanner](./Cloud_spanner_guide.md)
-[Microservices](./Microserivces_guide.md)
-[Set up public buckets](https://cloud.google.com/storage/docs/creating-buckets)
-[Set up email/passw login](https://cloud.google.com/identity-platform/docs/sign-in-user-email)
+💾 [Cloud Spanner](./Cloud_spanner_guide.md) 💾
+
+🖥️ [Microservices](./Microserivces_guide.md) 🖥️
+
+🪣 [Set up public buckets](https://cloud.google.com/storage/docs/creating-buckets) 🪣
+
+🔐 [Set up email/passw login](https://cloud.google.com/identity-platform/docs/sign-in-user-email) 🔐
 
 ## Architecture Diagram
 
