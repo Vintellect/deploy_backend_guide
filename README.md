@@ -1,42 +1,17 @@
-# Deployment Guide for App Engine
+# Backend guide for Vintellect
 
-This brief guide will assist you in deploying our microservices to App Engine. It is unnecessary to repeat the Requirements and Initial Setup sections for each microservice.
+Welcome to the Backend Guide for Vintellect! 
+This guide serves as a central resource for setting up and managing the backend components of your Vintellect projects.
 
-## Requirements
+## Link to specific guide :
 
-Before starting, ensure the following is installed:
-- Google Cloud SDK (gcloud CLI): For step-by-step instructions, follow the [installation guide](https://cloud.google.com/sdk/docs/installing).
+[Cloud Spanner](./Cloud_spanner_guide.md)
+[Microservices](./Microserivces_guide.md)
+[Set up public buckets](https://cloud.google.com/storage/docs/creating-buckets)
+[Set up email/passw login](https://cloud.google.com/identity-platform/docs/sign-in-user-email)
 
-## Initial Setup
+## Architecture Diagram
 
-After installing the gcloud CLI, authenticate and configure your project:
+Here is a scheme to show the interaction between microservices and users:
 
-1. Initialize gcloud:
-
-   ```sh
-   gcloud init
-   ```
-
-2. Authenticate using the on-screen instructions and your Google account.
-
-3. Choose the project you want to work on from the gcloud tool's provided list.
-
-## Deployment
-
-Execute the following command to deploy the User Management service to production:
-
-```sh
-gcloud app deploy ./app.yaml
-```
-
-Before executing the command, ensure you're in the directory containing the `app.yaml` file. This action will start the deployment of your application to Google App Engine.
-
-Proceed with these steps:
-
-```sh
-cp app.example.yml app.yml
-```
-
-Then, update the `.env` section with your specific values.
-
-For more detailed information on deployment, visit the [App Engine Deployment Guide](https://cloud.google.com/appengine/docs/standard/python3/deploying).
+![Architecture Diagram](./static/archi.png)
